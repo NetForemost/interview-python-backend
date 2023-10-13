@@ -10,10 +10,10 @@ Develop an API in which you can query the value of the current Bitcoin (or any o
 
 1. It must include an endpoint that allows to obtain the metadata of a cryptocurrency at the moment of making the request, and that optionally converts them to any other currency; that includes the following parameters:
    
-   - | name      | type     | description                                                                                                                                                          | required |
-     | --------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-     | `symbol`  | `string` | Alternatively pass one or more comma-separated cryptocurrency symbols. Example: "BTC,ETH".                                                                           | `True`   |
-     | `convert` | `string` | Optionally calculate market quotes for the given currencies at once by passing a comma-separated list of cryptocurrency or fiat currency symbols. Example: "USD,NIO" | `False`  |
+   - | name      | type     | description                                                                                                                        | required |
+     | --------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------- |
+     | `symbol`  | `string` | Alternatively pass one or more comma-separated cryptocurrency symbols. Example: "BTC,ETH".                                         | `True`   |
+     | `convert` | `string` | Optionally calculate market quotes for the given currency, by passing a *cryptocurrency* or *fiat currency* symbol. Example: "USD" | `False`  |
 
 2. It should generate OpenAPI documentation automatically and expose an endpoint for viewing.
 
